@@ -10,6 +10,11 @@ import { Services } from './ui/services/services';
 import { Contact } from './ui/contact/contact';
 import { MatIconModule } from '@angular/material/icon';
 import { Commentaire } from './component/commentaire/commentaire';
+import { Footer } from './component/footer/footer';
+import { Login } from './ui/login/login';
+import { MainLayout } from './layouts/main-layout/main-layout';
+import { AuthLayout } from './layouts/auth-layout/auth-layout';
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -19,12 +24,17 @@ import { Commentaire } from './component/commentaire/commentaire';
     About,
     Services,
     Contact,
-    Commentaire
+    Commentaire,
+    Footer,
+    Login,
+    MainLayout,
+    AuthLayout
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MatIconModule
+    MatIconModule,
+    FormsModule,
   ],
   providers: [
     provideBrowserGlobalErrorListeners()
