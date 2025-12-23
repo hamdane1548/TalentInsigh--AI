@@ -4,6 +4,8 @@ import { Home } from './ui/home/home';
 import {MainLayout} from './layouts/main-layout/main-layout';
 import {AuthLayout} from './layouts/auth-layout/auth-layout';
 import {Login} from './ui/login/login';
+import {About} from './ui/about/about';
+import {Contact} from './ui/contact/contact';
 
 const routes: Routes = [
   {
@@ -11,7 +13,8 @@ const routes: Routes = [
     component:MainLayout,
     children:[
       {path:'',component: Home},
-
+      {path:'about',component: About},
+      {path: 'contact',component: Contact}
     ]
   },
   {
