@@ -1,9 +1,32 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { Home } from './ui/home/home';
+import {MainLayout} from './layouts/main-layout/main-layout';
+import {AuthLayout} from './layouts/auth-layout/auth-layout';
+import {Login} from './ui/login/login';
+import {About} from './ui/about/about';
+import {Contact} from './ui/contact/contact';
 
 const routes: Routes = [
-  {path:"",component:Home}
+  {
+    path:"",
+    component:MainLayout,
+    children:[
+      {path:'',component: Home},
+      {path:'about',component: About},
+      {path: 'contact',component: Contact}
+    ]
+  },
+  {
+    path:"auth",
+    component:AuthLayout,
+    children:[
+      {
+        path: 'login',
+        component: Login
+      }
+    ]
+  }
 ];
 
 @NgModule({

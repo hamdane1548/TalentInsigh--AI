@@ -4,22 +4,22 @@
 <h1 class="text-white font-medium">Hirsens</h1>
   </div>
    <div class="w-auto  h-full flex items-center  space-x-14">
-     <a routerLink="home" class="group text-white relative inline-block font-medium">
+     <a routerLink="" class="group text-white relative inline-block font-medium">
         Home
       <span class="absolute left-0 -bottom-1 h-0.5 w-full bg-blue-500 transform scale-x-0 origin-left transition-transform duration-300 group-hover:scale-x-100"></span>
      </a>
-            <a class="font-medium text-white group relative inline-block" href="">About Us
+            <a routerLink="about" class="font-medium text-white group relative inline-block" href="">About Us
                 <span class="absolute left-0 -bottom-0 h-0.5 w-full bg-blue-500 transform scale-x-0 origin-left transition-transform duration-300 group-hover:scale-100"></span>
             </a>
              <a class="font-medium group text-white relative inline-block" href="">Services
                 <span class="absolute left-0 -bottom-0 h-0.5 w-full bg-blue-500 transform scale-x-0 origin-left transition-transform duration-300 group-hover:scale-100"></span>
             </a>
-             <a class="font-medium group text-white relative inline-block" href="">Contact Us
+             <a routerLink="contact" class="font-medium group text-white relative inline-block" href="">Contact Us
                 <span class="absolute left-0 -bottom-0 h-0.5 w-full bg-blue-500 transform scale-x-0 origin-left transition-transform duration-300 group-hover:scale-100"></span>
             </a>
    </div>
   <div class="w-auto h-4 px-6 space-x-6  flex items-center ">
-          <div class="flex items-center space-x-3"> 
+          <div class="flex items-center space-x-3">
             <div class="flex flex-col -space-y-2 items-start">
             <h1 class="text-white">+120</h1>
             <p class="text-white font-light text-sm">users</p>
@@ -28,7 +28,7 @@
               <mat-icon >person</mat-icon>
             </div>
           </div>
-        <button class="bg-[#397367] px-4 py-0.5 text-white font-normal flex items-center text-xm rounded-lg">Connecte</button>
+        <button (click)="goToLoginPage()" class="bg-[#397367] px-4 py-0.5 text-white font-normal flex items-center text-xm rounded-lg">Connecte</button>
   </div>
 </nav>
- 
+
